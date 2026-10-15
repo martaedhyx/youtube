@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#000000">
+
+    <title>YouTube</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #000000;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 380px;
+            padding: 25px;
+        }
+
+        /* LOGO YOUTUBE HITAM */
+        .logo {
+            width: 110px;
+            height: 80px;
+            margin: 0 auto 25px;
+            background: #000000;
+            border: 2px solid #ff0033;
+            border-radius: 22px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            box-shadow:
+                0 0 12px rgba(255, 0, 51, 0.35),
+                inset 0 0 12px rgba(255, 0, 51, 0.08);
+        }
+
+        /* TOMBOL PLAY PUTIH */
+        .play {
+            width: 0;
+            height: 0;
+
+            border-top: 17px solid transparent;
+            border-bottom: 17px solid transparent;
+            border-left: 27px solid #ffffff;
+
+            margin-left: 7px;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin: 0 0 12px;
+            letter-spacing: 1px;
+        }
+
+        p {
+            color: #aaaaaa;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 28px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 14px 28px;
+            background: #ff0033;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: 0.2s;
+        }
+
+        .button:active {
+            transform: scale(0.95);
+        }
+
+        .footer {
+            margin-top: 35px;
+            font-size: 11px;
+            color: #555555;
+        }
+    </style>
+
+    <script>
+        // Langsung buka YouTube Mobile
+        window.location.replace(
+            "https://m.youtube.com"
+        );
+    </script>
+</head>
+
+<body>
+    <main class="container">
+
+        <div class="logo">
+            <div class="play"></div>
+        </div>
+
+        <h1>YouTube</h1>
+
+        <p>
+            Membuka YouTube versi mobile...
+            <br>
+            Mohon tunggu sebentar.
+        </p>
+
+        <a
+            class="button"
+            href="https://m.youtube.com"
+        >
+            BUKA YOUTUBE
+        </a>
+
+        <div class="footer">
+            YOUTUBE MOBILE LAUNCHER
+        </div>
+
+    </main>
+</body>
+</html>
